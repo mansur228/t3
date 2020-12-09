@@ -35,6 +35,7 @@ a{
     font-weight: 900;
     color: #222;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .sub_title{
@@ -266,7 +267,7 @@ header{
 .load_more_work{
     width: 100%;
     height: 15vh;
-    background-color: #d4d4d4;
+    background-color: #F5F5F5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -274,4 +275,104 @@ header{
     font-size: 25px;
     font-weight: 900;
     color: #333;
+    cursor: pointer;
+}
+
+.Out_work_process{
+    .video{
+        width: 100%;
+        height: 70vh;
+        margin-top: 50px;
+    }
+}
+
+.what_we_can{
+    background-color: #F5F5F5;
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 20px;
+        .what_we_can__item{
+            padding: 10px;
+            .what_we_can__item_content{
+                display: grid;
+                grid-template-rows: 1fr 2fr;
+                .what_we_can__item_picture{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .what_we_can__item_text{
+                    text-align: center;
+                    line-height: 1.7;
+                    .what_we_can__item_title{
+                        color: #2C2C2C;
+                        margin-top: 10px;
+                        text-align: center;
+                    }
+                    .what_we_can__item_sub_title{
+                        color: #444;
+                        font-weight: 400;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.our_friends{
+    width: 100%;
+    height: 20vh;
+    .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.Need_a_Project{
+    background-color: #F2F2F2;
+    width: 100%;
+    height: calc(100vh - 120px);
+    .Need_a_Project__container{
+        max-width: 700px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px 10px 10px 10px;
+        .sub_title{
+            max-width: 500px;
+            margin-top: 10px;
+        }
+    }
+    .Need_a_Project__content{
+        width: 100%;
+        padding-top: 20px;
+        .client_info{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 30px;
+            height: 40px;
+        }
+        .client_project_title{
+            margin-top: 30px;
+            height: 40px;
+        }
+        .client_comment{
+            height: 40vh;
+            margin-top: 30px;
+            background-color: #fff;
+            padding: 5px;
+        }
+    }
+    input{
+        border: none;
+        border-radius: 0;
+        border-color: #F5F5F5;
+        width: 100%;
+        height: 100%;
+    }
 }
