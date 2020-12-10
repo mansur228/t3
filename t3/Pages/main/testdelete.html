@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            min-height: 0;
+            width: 100px;
+            background-color: teal;
+            transition: all 1s ease-in-out;
+        }
+
+        input{
+            display: none;
+        }
+
+        input:checked ~ div{
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="" id="inp">
+    <label for="inp">></label>
+    <div></div>
+</body>
+</html>

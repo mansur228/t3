@@ -50,7 +50,7 @@ for (let i = 0; i < 8; i++) {
 
 $('.load_more_work')[0].addEventListener('click' , ()=>{
     $('.merch')[0].innerHTML += `
-    <div class="merch_img" style="background-image: url(&quot;images/b0.jpg&quot;);">
+        <div class="merch_img" style="background-image: url(&quot;images/b0.jpg&quot;);">
             <div class="merch_img__hover">
                 <img src="https://img.icons8.com/ios/100/000000/uchiha-eyes.png">
             </div>
@@ -91,4 +91,9 @@ $('.load_more_work')[0].addEventListener('click' , ()=>{
             </div>
         </div>
     `
+})
+
+$('#menu_btn').on('click' , ()=>{
+    $('nav').toggleClass('active')
+    $('#menu_btn').toggleClass('active')
 })
